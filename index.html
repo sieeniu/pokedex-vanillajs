@@ -1,0 +1,33 @@
+<html lang="pl">
+<head>
+    <title>Pokedex</title>
+    <link rel="icon" href="src/assets/images/favicon.ico">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="container">
+    <div class="search">
+        <span class="search__icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <input class="search__input" placeholder="Search your favourite pokemon!"/>
+    </div>
+    <div class="pokemon-list">
+        <ul class="pokemon-list__elements"></ul>
+        <div class="pokemon-list__not-found">
+            <img class="pokemon-list__not-found-image" src="src/assets/images/notfound.png" alt="Not found"/>
+            <span class="pokemon-list__not-found-message">Nie znaleziono pokemonów o podanej nazwie</span>
+        </div>
+    </div>
+    <button class="button button__primary load-more">
+        <span class="button__text">Load more...</span>
+    </button>
+</div>
+
+<script src="src/app.js" type="module"></script>
+</body>
+</html>
